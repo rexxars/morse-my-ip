@@ -1,0 +1,28 @@
+{
+  "name": "morse-my-ip",
+  "version": "1.0.0",
+  "description": "Finds your IP and gives it to you in morse code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run webpack",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rexxars/morse-my-ip.git"
+  },
+  "keywords": [
+    "morse",
+    "ip"
+  ],
+  "author": "Espen Hovlandsdal <espen@hovlandsdal.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rexxars/morse-my-ip/issues"
+  },
+  "homepage": "https://github.com/rexxars/morse-my-ip#readme",
+  "dependencies": {
+    "webpack": "^1.12.2"
+  }
+}
