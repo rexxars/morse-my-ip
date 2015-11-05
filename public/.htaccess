@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule "^morse\.wav$" "morse-wav.php"
