@@ -4,10 +4,13 @@ require __DIR__ . '/../library/bootstrap.php';
 $clientIp = getClientIp();
 $morsedIp = (new Morse\Text())->toMorse($clientIp);
 
-header('Cache-Control: no-cache');
 header('Content-Type: text/html; charset=utf-8');
 header('X-Your-IP: ' . $clientIp);
 header('X-Your-IP-Morse: ' . $morsedIp);
+
+header('Cache-Control: no-cache, no-store, must-revalidate');
+header('Pragma: no-cache');
+header('Expires: 0');
 ?>
 <!doctype html>
 <html lang="en-us">
@@ -17,7 +20,7 @@ header('X-Your-IP-Morse: ' . $morsedIp);
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>What is my IP-address - Morse my IP.</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-    <link href="css/morsemyip.css" rel="stylesheet" type="text/css">
+    <link href="css/morsemyip.css?v2" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -61,7 +64,7 @@ window.morseMyIp.clientIP = <?php echo json_encode($clientIp); ?>
     </div>
 </div>
 
-<script src="js/bundle.js"></script>
+<script src="js/bundle.js?v2"></script>
 
 </body>
 </html>

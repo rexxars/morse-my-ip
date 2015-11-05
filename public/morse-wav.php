@@ -10,6 +10,10 @@ header('X-Pad: avoid browser bug');
 header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
 header('Accept-Ranges: bytes');
 
+header('Cache-Control: no-cache, no-store, must-revalidate');
+header('Pragma: no-cache');
+header('Expires: 0');
+
 $seekStart = 0;
 $seekEnd = $contentLength;
 
