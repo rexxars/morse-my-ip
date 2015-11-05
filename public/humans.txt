@@ -1,0 +1,2 @@
+Created by Espen Hovlandsdal (espen.codes)
+MIT-licensed. See https://github.com/rexxars/morse-my-ip
