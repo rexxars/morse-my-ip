@@ -17,6 +17,7 @@ Ever wondered what your current IP-address sounds like in morse code?
   * Run `npm run build`
 * Symlink the `public` folder to somewhere within your document root
 * Ensure that `mod_rewrite` is enabled for the document root and that `.htaccess` files can be read (eg, `AllowOverride all`)
+* Behind a proxy? Copy `config/config.dist.php` to `config/config.php` and edit the `trustedProxies` option (see [Symfony docs](http://symfony.com/doc/current/components/http_foundation/trusting_proxies.html))
 * Done? Done.
 
 ## License
