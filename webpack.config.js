@@ -1,5 +1,6 @@
 'use strict';
 
+var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
@@ -8,5 +9,10 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'public', 'js'),
         filename: 'bundle.js'
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            comments: /FOO/
+        })
+    ]
 };
