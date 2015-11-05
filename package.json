@@ -1,6 +1,7 @@
 {
   "name": "morse-my-ip",
   "version": "1.0.0",
+  "private": true,
   "description": "Finds your IP and gives it to you in morse code",
   "main": "index.js",
   "scripts": {
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/rexxars/morse-my-ip#readme",
   "dependencies": {
+    "imports-loader": "^0.6.5",
     "webpack": "^1.12.2"
   }
 }
