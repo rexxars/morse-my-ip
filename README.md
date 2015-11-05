@@ -11,9 +11,10 @@ Ever wondered what your current IP-address sounds like in morse code?
 ## Setup
 
 * Clone the project
-* Run `composer install` (see [composer docs](https://getcomposer.org/doc/00-intro.md))
-* Run `npm install`
-* Run `npm run build`
+* Either run `./build.sh`, or manually:
+  * Run `composer install` (see [composer docs](https://getcomposer.org/doc/00-intro.md))
+  * Run `npm install`
+  * Run `npm run build`
 * Symlink the `public` folder to somewhere within your document root
 * Ensure that `mod_rewrite` is enabled for the document root and that `.htaccess` files can be read (eg, `AllowOverride all`)
 * Done? Done.
