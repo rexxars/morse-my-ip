@@ -5,7 +5,8 @@
     "homepage": "http://morsemyip.com/",
     "require": {
         "symfony/http-foundation": "^2.7",
-        "rexxars/morse": "^1.0"
+        "rexxars/morse": "^1.0",
+        "php": ">=5.4.0"
     },
     "license": "MIT",
     "authors": [

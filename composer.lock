@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3d40a3694d518f5cae0b80fb154414be",
-    "content-hash": "3f5da5887d9d3e94dbe0b642a536a910",
+    "hash": "f8c3bf5376e9793d5b913f663157983d",
+    "content-hash": "2c76b0adfb2b9912a3613c72626b07e5",
     "packages": [
         {
             "name": "rexxars/morse",
@@ -105,6 +105,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.4.0"
+    },
     "platform-dev": []
 }
