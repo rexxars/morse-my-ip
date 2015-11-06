@@ -70,6 +70,10 @@ function playGeneratedAudio() {
     var ac = new (window.AudioContext || window.webkitAudioContext)();
 
     var morse = new MorseNode(ac);
-    morse.connect(ac.destination);
+    var gainNode = ac.createGain();
+    gainNode.gain.value = 0.2;
+
+    morse.connect(gainNode);
+    gainNode.connect(ac.destination);
     morse.playString(ac.currentTime, window.morseMyIp.clientIP || '');
 }
